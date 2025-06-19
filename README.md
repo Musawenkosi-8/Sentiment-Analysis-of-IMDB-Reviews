@@ -1,2 +1,8 @@
-# https-codeberg.org-Musawenkosi-Sentiment-Analysis-of-IMDB-Reviews
- In today’s data-rich world, businesses and platforms receive thousands of user reviews every day. Understanding sentiment at scale can drive marketing, product decisions, and user satisfaction.
+Sentiment-Analysis-of-IMDB-Reviews
+
+Problem Statement:
+In today’s data-rich world, businesses and platforms receive thousands of user reviews every day. Understanding sentiment at scale can drive marketing, product decisions, and user satisfaction. 
+Goal:
+Build an end-to-end machine learning pipeline to classify IMDB movie reviews as positive or negative, leveraging natural language processing (NLP) on unstructured text data. Tools & Technologies Languages & Libraries: Python, Scikit-learn, TensorFlow Datasets, Pandas, Matplotlib, Seaborn, Flask ML Techniques: TF-IDF Vectorization, Logistic Regression Deployment: REST API using Flask + Model Serialization via joblib Visualization: Bar charts, pie charts, and confusion matrix breakdown for intuitive performance analysis 
+Process Overview & Results:
+Data Preprocessing Cleaned text (lowercased, removed HTML/punctuation/noise) Tokenized and transformed using TF-IDF Converted to sparse matrix format for modeling Model Training Trained a Logistic Regression classifier on 25K reviews Evaluated using precision, recall, F1-score, accuracy Visualized metrics across classes using pie and bar charts Performance & Evaluation Accuracy: ~88–90% F1 Score: Balanced across both classes Confusion matrix visualized as a pie chart for intuitive understanding Deployment Deployed as a Flask API endpoint: POST /predict — accepts raw text and returns sentiment Preprocessing and vectorization integrated into the API pipeline Model and vectorizer stored as .pkl files for portability Outcome A fully functional and interpretable sentiment classifier with high accuracy and a clean deployment interface. This project demonstrates: Mastery of working with unstructured text data Practical ML deployment with Python Strong communication of result through vizualizations.
